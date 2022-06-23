@@ -1,0 +1,39 @@
+    #wrapper {
+    max-width: 960px;
+    margin: 0px auto;
+    }
+    
+        #header,
+        #footer {
+            background: tomato;
+            color: yellow;
+            text-align: center;
+            padding: 10px 0px;
+        }
+        #wp-content {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        #content {
+            background: #dbd8d8;
+            padding: 10px;
+            flex-basis: 100%;
+        }
+
+        #sidebar {
+            background: black;
+            color: #f0f0f0;
+            padding: 10px;
+            flex-basis: 100%;
+        }
+
+        @media(min-width: 576px) {
+
+            #content {
+               flex-basis: 70%;
+            }
+
+            #sidebar {
+                flex-basis: 30%;
+            }
+        } 
